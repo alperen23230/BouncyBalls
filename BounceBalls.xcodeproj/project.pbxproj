@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8432472E2242142A00FB387A /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8432472D2242142A00FB387A /* FireParticles.sks */; };
+		843247302242199B00FB387A /* CgPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432472F2242199B00FB387A /* CgPointExtension.swift */; };
 		84455D6C223F90290009DE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84455D6B223F90290009DE55 /* AppDelegate.swift */; };
 		84455D6E223F90290009DE55 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 84455D6D223F90290009DE55 /* GameScene.sks */; };
-		84455D70223F90290009DE55 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 84455D6F223F90290009DE55 /* Actions.sks */; };
 		84455D72223F90290009DE55 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84455D71223F90290009DE55 /* GameScene.swift */; };
 		84455D74223F90290009DE55 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84455D73223F90290009DE55 /* GameViewController.swift */; };
 		84455D77223F90290009DE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84455D75223F90290009DE55 /* Main.storyboard */; };
@@ -18,10 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8432472D2242142A00FB387A /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
+		8432472F2242199B00FB387A /* CgPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CgPointExtension.swift; sourceTree = "<group>"; };
 		84455D68223F90290009DE55 /* BounceBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BounceBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84455D6B223F90290009DE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84455D6D223F90290009DE55 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		84455D6F223F90290009DE55 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		84455D71223F90290009DE55 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		84455D73223F90290009DE55 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		84455D76223F90290009DE55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,12 +64,13 @@
 			children = (
 				84455D6B223F90290009DE55 /* AppDelegate.swift */,
 				84455D6D223F90290009DE55 /* GameScene.sks */,
-				84455D6F223F90290009DE55 /* Actions.sks */,
 				84455D71223F90290009DE55 /* GameScene.swift */,
+				8432472F2242199B00FB387A /* CgPointExtension.swift */,
 				84455D73223F90290009DE55 /* GameViewController.swift */,
 				84455D75223F90290009DE55 /* Main.storyboard */,
 				84455D78223F902A0009DE55 /* Assets.xcassets */,
 				84455D7A223F902A0009DE55 /* LaunchScreen.storyboard */,
+				8432472D2242142A00FB387A /* FireParticles.sks */,
 				84455D7D223F902A0009DE55 /* Info.plist */,
 			);
 			path = BounceBalls;
@@ -133,9 +136,9 @@
 			files = (
 				84455D77223F90290009DE55 /* Main.storyboard in Resources */,
 				84455D6E223F90290009DE55 /* GameScene.sks in Resources */,
+				8432472E2242142A00FB387A /* FireParticles.sks in Resources */,
 				84455D79223F902A0009DE55 /* Assets.xcassets in Resources */,
 				84455D7C223F902A0009DE55 /* LaunchScreen.storyboard in Resources */,
-				84455D70223F90290009DE55 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +151,7 @@
 			files = (
 				84455D72223F90290009DE55 /* GameScene.swift in Sources */,
 				84455D74223F90290009DE55 /* GameViewController.swift in Sources */,
+				843247302242199B00FB387A /* CgPointExtension.swift in Sources */,
 				84455D6C223F90290009DE55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTMVBPSRA5;
 				INFOPLIST_FILE = BounceBalls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alperenunal.BounceBalls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -315,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTMVBPSRA5;
 				INFOPLIST_FILE = BounceBalls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alperenunal.BounceBalls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
